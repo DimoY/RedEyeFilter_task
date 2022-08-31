@@ -9,9 +9,9 @@ void Solution::compute([[maybe_unused]]std::vector<StrideImage> &images) {
     for (size_t image_index = 0; image_index < images.size(); image_index++)
     {
       auto image = images[image_index];
-      for (size_t i = 0; i < image.resolution.height-5; i++)
+      for (int i = 0; i < image.resolution.height-5; i++)
       {
-        for (size_t j = 0; j < image.resolution.width-5; j++)
+        for (int j = 0; j < image.resolution.width-5; j++)
         {
           std::array<int,EYEPATTERNDOUBLE> PotentialEye;
           for (size_t widti = 0; widti < 5; widti++)
