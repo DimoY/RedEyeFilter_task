@@ -5,6 +5,7 @@
 # How to run
 
 ```
+cd cpp
 make && ./eye
 ```
 
