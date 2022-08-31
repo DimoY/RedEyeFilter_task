@@ -1,2 +1,2 @@
 all:
-	g++ main.cpp Solution.cpp utils/Image.cpp EyePatternConverter.cpp -Wall -pedantic -o eye
+	g++ main.cpp Solution.cpp utils/Image.cpp EyePatternConverter.cpp -Ofast -Wall -pedantic -o eye
