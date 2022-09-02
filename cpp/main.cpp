@@ -5,8 +5,8 @@
 
 int32_t main([[maybe_unused]]int32_t argc, [[maybe_unused]]char *argv[]) {
   //Use the provided implementation that best suits your needs
-  //using Image = PackedImage;
-  using Image = StrideImage;
+  using Image = PackedImage;
+  //using Image = StrideImage;
 
   std::vector<Image> inputImages;
   std::vector<Image> outputImages;
@@ -17,7 +17,7 @@ int32_t main([[maybe_unused]]int32_t argc, [[maybe_unused]]char *argv[]) {
   }
 
   Solution solution;
-  solution.compute(inputImages);
+  solution.compute(&inputImages);
 
   err = SolutionEvaluator<Image>::compare(inputImages, outputImages);
   if (EXIT_SUCCESS != err) {

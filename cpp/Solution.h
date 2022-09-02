@@ -11,8 +11,8 @@ private:
 
     EyePatternConverter eye = EyePatternConverter();
 public:
-  void compute([[maybe_unused]]std::vector<PackedImage> &images);
-  void compute([[maybe_unused]]std::vector<StrideImage> &images);
+  void compute([[maybe_unused]]std::vector<PackedImage> *images);
+  void compute([[maybe_unused]]std::vector<StrideImage> *images);
 };
 
 #endif /* SOLUTION_H_ */
