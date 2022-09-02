@@ -154,7 +154,7 @@ void EyePatternConverter::removeRedEyeAtIndex(std::vector<Image> *images, size_t
 		for (int Xindex = 0; Xindex < _image_width; Xindex++)
 		{
 			bool eye;
-			for (int pattern = 0; pattern < this->eyePatterns.size(); pattern++)
+			for (size_t pattern = 0; pattern < this->eyePatterns.size(); pattern++)
 			{
 				eye = this->checkSquare(&(images[0][image_index]), pattern, Xindex, Yindex);
 

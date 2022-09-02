@@ -4,9 +4,12 @@
 
 # How to run
 
+be shure to have the files in the same directory as the README.md file
+
 ```
-cd cpp
-make && ./eye
+cmake .
+make
+./eye
 ```
 
 :)
